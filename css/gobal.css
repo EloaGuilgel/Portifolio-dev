@@ -1,0 +1,51 @@
+:root {
+  /* 🎨 Cores */
+  --color-background: #0f0f0f;
+  --color-white: #e2e4e9;
+  --base-gray: #c0c4ce;
+  --color-text-sm: #878ea1;
+  --color-red: #e3646e;
+  --color-black: #000000;
+
+  /* 🔤 Font Families */
+  --font-title: "Asap", sans-serif;
+  --font-subtitle: "Inconsolata", monospace;
+  --font-text: "Maven Pro", sans-serif;
+
+  /* 🅰️ Titles */
+  --title-lg-size: 56px;
+  --title-lg-line: 120%;
+  --title-lg-weight: 700;
+
+  --title-md-size: 24px;
+  --title-md-line: 120%;
+  --title-md-weight: 700;
+
+  --title-sm-size: 16px;
+  --title-sm-line: 120%;
+  --title-sm-weight: 700;
+
+  /* 🅱️ Subtitle */
+  --subtitle-size: 20px;
+  --subtitle-line: 120%;
+  --subtitle-weight: 400;
+
+  /* 🅲 Text */
+  --text-md-size: 16px;
+  --text-md-line: 140%;
+  --text-md-weight: 400;
+
+  --text-sm-size: 14px;
+  --text-sm-line: 140%;
+  --text-sm-weight: 400;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-white);
+
+  font-family: var(--font-text);
+  font-size: var(--text-md-size);
+  line-height: var(--text-md-line);
+  font-weight: var(--text-md-weight);
+}
