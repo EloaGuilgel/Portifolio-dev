@@ -7,6 +7,13 @@
   justify-content: flex-start; /* Alinha ao topo */
   padding-top: 40px; /* Ajuste esse valor para controlar a distância do topo */
   min-height: 100vh; /* Garante que o fundo ocupe a tela toda */
+
+  width: 680px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .info-profile img {
@@ -38,15 +45,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.info {
-  width: 680px;
-  max-width: 100%;
+.scroll-indicator {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+  width: 44px;
+  height: 44px;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+}
+
+.scroll-indicator svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 8px);
+  }
+}
+
+.scroll-indicator {
+  animation: bounce 1.5s infinite ease-in-out;
 }
 
 .info-profile {
@@ -90,8 +123,8 @@
 
 .info-title {
   font-family: var(--font-title);
-  font-size: 56px;
-  line-height: 120%;
+  font-size: 60px;
+  line-height: 115%;
   font-weight: 700;
   color: #e2e4e9;
 }
@@ -112,6 +145,7 @@
   gap: 16px 28px;
   width: 100vw; /* Ocupa a largura da tela se necessário */
   max-width: 800px;
+  cursor: pointer;
 }
 
 .tag {
@@ -127,4 +161,48 @@
 }
 .tag span {
   color: #c0c4ce;
+}
+
+.projects {
+  background-color: #0f1116; /* fundo escuro igual ao site */
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.projects-subtitle {
+  font-family: var(--font-subtitle);
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--color-red);
+}
+
+.projects-title {
+  font-family: var(--font-title);
+  font-size: 32px;
+  font-weight: 700;
+  color: #e2e4e9;
+  margin-top: 8px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  width: 100%;
+  max-width: 960px; /* mais próximo da intro */
+  margin: 0 auto;
+}
+.project-image img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  display: block;
 }
