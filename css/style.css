@@ -93,20 +93,19 @@
 
   width: 32px;
   height: 32px;
-  background-color: #16181d;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  right: -6px;
-  bottom: -6px;
-  border-radius: 0;
-  overflow: hidden;
+  right: 0px;
+  bottom: 0px;
+
+  background: transparent; /* sem fundo */
 }
 .profile-badge svg {
   width: 31px;
-  height: 25px;
+  height: 32px;
   display: block;
 }
 
@@ -161,6 +160,9 @@
 }
 .tag span {
   color: #c0c4ce;
+
+  font-family: var(--font-text);
+  font-size: 16px;
 }
 
 .projects {
@@ -186,7 +188,7 @@
 }
 
 .projects-title {
-  font-family: var(--font-text);
+  font-family: var(--font-title);
   font-size: 24px;
   font-weight: 600;
   color: #e2e4e9;
@@ -217,7 +219,7 @@
 }
 
 .project-card {
-  background: #1f232d; /* um pouco mais claro que antes */
+  background: #1f232d;
   border-radius: 18px;
   padding: 20px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
@@ -226,7 +228,7 @@
 
 .project-card:hover {
   transform: translateY(-6px);
-  background-color: #1c2029; /* escurecimento leve */
+  background-color: #1c2029;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
 }
 
@@ -242,4 +244,177 @@
   font-size: 14px;
   line-height: 1.5;
   font-family: var(--font-text);
+}
+
+.services {
+  background-color: #0d0e11;
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-grid {
+  margin-top: 64px;
+  width: 100%;
+  max-width: 900px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background-color: #0d0e11;
+  border: 2px solid #16181d;
+
+  border-radius: 12px;
+  padding: 20px;
+
+  min-height: 155px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-card img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+}
+
+.service-card h3 {
+  color: #e2e4e9;
+  font-size: 16px;
+  font-family: var(--font-title);
+}
+
+.service-card p {
+  color: #c0c4ce;
+  font-size: 14px;
+  font-family: var(--font-text);
+}
+
+.service-card h3,
+.service-card p {
+  max-width: 240px;
+}
+
+.service-card h3 {
+  line-height: 20px;
+}
+
+.service-card p {
+  line-height: 20px;
+}
+
+/* ================= CONTATO ================= */
+
+.contact {
+  min-height: 100vh;
+  background: url("../imagens/background/Background_Contacts.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 120px; /* empurra tudo para baixo */
+
+  margin: 0 auto 28px;
+}
+
+.contact-content {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  gap: 48px;
+}
+
+.contact-header {
+  width: 420px; /* largura igual ao Figma */
+  margin: 0 auto 48px; /* centraliza e dá espaço até os botões */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  max-width: 420px;
+  width: 100%;
+
+  margin-top: -30px;
+}
+
+.contact-subtitle {
+  color: #bb72e9;
+  font-size: 20px;
+  margin-bottom: 8px;
+  line-height: 24px;
+  display: block;
+  font-family: var(--font-subtitle);
+}
+
+.contact-title {
+  color: #e2e4e9;
+  font-size: 24px;
+  margin-bottom: 8px;
+  line-height: 40px;
+  font-family: var(--font-title);
+}
+
+.contact-text {
+  color: #c0c4ce;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 420px;
+  margin: 0 auto;
+  font-family: var(--font-text);
+}
+
+.contact-card {
+  background: #242730;
+  border-radius: 12px;
+  padding: 18px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-decoration: none;
+  color: #e2e4e9;
+  transition: 0.2s ease;
+}
+
+.contact-card:hover {
+  background: #2b2f3a;
+  transform: translateY(-2px);
+}
+
+.contact-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-left img {
+  width: 27px;
+}
+
+.contact-arrow {
+  width: 18px;
 }

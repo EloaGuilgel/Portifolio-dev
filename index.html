@@ -32,9 +32,10 @@
     />
   </head>
   <body>
+    html { scroll-behavior: smooth; }
     <header class="intro">
       <div class="info">
-        <div class="scroll-indicator">
+        <a href="#projects" class="scroll-indicator">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
             <path
               d="M7 10L12 15L17 10"
@@ -51,7 +52,7 @@
               stroke-linejoin="round"
             />
           </svg>
-        </div>
+        </a>
         <div class="info-profile">
           <img src="imagens/background/avatar.png" alt="foto perfil" />
 
@@ -122,7 +123,7 @@
     </header>
 
     <!--SEGUNDA TELA -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <!-- Cabeçalho da seção -->
       <header class="projects-header">
         <span class="projects-subtitle">Meu Trabalho </span>
@@ -211,6 +212,83 @@
             </p>
           </div>
         </article>
+      </div>
+    </section>
+
+    <!-- TERCEIRA TELA - SERVIÇOS -->
+    <section class="services">
+      <header class="projects-header">
+        <span class="projects-subtitle">Meus serviços</span>
+        <h2 class="projects-title">Como posso ajudar o seu negócio</h2>
+      </header>
+
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <article class="service-card">
+          <img src="imagens/icones/websites.svg" alt="Serviço 1" />
+          <h3>Websites e Aplicativos</h3>
+          <p>Desenvolvimento de interfaces</p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="service-card">
+          <img src="imagens/icones/api.svg" alt="Serviço 2" />
+          <h3>API e banco de dados</h3>
+          <p>Criação de serviços do sistema</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="service-card">
+          <img src="imagens/icones/dev.svg" alt="Serviço 3" />
+          <h3>DevOps</h3>
+          <p>Gestão e infraestrutura da aplicação</p>
+        </article>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact-content">
+        <header class="contact-header">
+          <span class="contact-subtitle">Contato</span>
+          <h2 class="contact-title">Gostou do meu trabalho?</h2>
+          <p class="contact-text">
+            Entre em contato ou acompanhe as minhas redes sociais!
+          </p>
+        </header>
+
+        <div class="contact-links">
+          <!-- Botões -->
+          <a href="#" class="contact-card">
+            <div class="contact-left">
+              <img src="imagens/icones/LinkedinLogo.svg" alt="Linkedin" />
+              <span>Linkedin</span>
+            </div>
+            <img class="contact-arrow" src="imagens/icones/ArrowUpRight.svg" />
+          </a>
+
+          <a href="#" class="contact-card">
+            <div class="contact-left">
+              <img src="imagens/icones/InstagramLogo.svg" alt="Instagram" />
+              <span>Instagram</span>
+            </div>
+            <img class="contact-arrow" src="imagens/icones/ArrowUpRight.svg" />
+          </a>
+
+          <a href="#" class="contact-card">
+            <div class="contact-left">
+              <img src="imagens/icones/GithubLogo.svg" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
+            <img class="contact-arrow" src="imagens/icones/ArrowUpRight.svg" />
+          </a>
+
+          <a href="#" class="contact-card">
+            <div class="contact-left">
+              <img src="imagens/icones/Vector.svg" alt="Email" />
+              <span>E-mail</span>
+            </div>
+            <img class="contact-arrow" src="imagens/icones/ArrowUpRight.svg" />
+          </a>
+        </div>
       </div>
     </section>
   </body>
