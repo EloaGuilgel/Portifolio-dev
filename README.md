@@ -27,7 +27,8 @@ O layout foi inspirado em um design profissional, priorizando experiência do us
 ## 🌐 Preview do Projeto
 
 <p align="center">
-  <a href="https://eloaguilgel.github.io/Portifólio-dev/" target="_blank">
+ 
+  <a href="https://eloaguilgel.github.io/Portifolio-dev/" target="_blank">
     🚀 Clique aqui para acessar o projeto
   </a>
 </p>
